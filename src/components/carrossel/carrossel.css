@@ -1,0 +1,92 @@
+
+
+.container-carrossel-unico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10rem;
+    width: 100%;
+
+  }
+  
+.container-carrossel-unico > .contain1{
+
+    display: flex;
+    width: 50%;
+    position: relative;
+
+}
+
+.contain1 > .img1{
+    width: 100%;
+
+}
+
+
+.container-carrossel-unico > .contain2{
+    display: flex;
+    flex-direction: column;
+ 
+    width: 25.4%;
+
+
+}
+
+.contain2 > .img2,
+.contain2 > .img3 {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.2rem;
+  position: relative; 
+
+}
+
+
+
+.contain2 > .img2 > .image1,
+.contain2 > .img3 > .image2 {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.2rem;
+ 
+}
+
+.image1, .image2{
+    position: relative;
+}
+
+
+.title-contain2,
+.title-contain1,
+.title-contain3{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    bottom: 0;
+    margin-left: 1rem;
+    font-size: 2rem;
+    background-color: rgba(95,115,138,.3);
+    padding: 0.5rem;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.btn-arrow-container{
+    background: none;
+    border: none;
+    width: 10%;
+}
+
+
+.btn-arrow-container > img{
+    width: 100%;
+    height: 10rem;
+}
+
+.container-carrossel-unico > .contain1:hover .title-contain1,
+.container-carrossel-unico >  .contain2 > .img2:hover .title-contain2,
+.container-carrossel-unico > .contain2 >  .img3:hover .title-contain3 {
+  opacity: 1;
+}

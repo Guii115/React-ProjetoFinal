@@ -1,0 +1,15 @@
+#signUp {
+  width: 50rem;
+}
+
+#signUp > fieldset {
+  flex-direction: column;
+}
+
+#signUp > fieldset > input {
+  height: 6.4vh;
+}
+
+#signUp > fieldset > h1 > img {
+  width: 5rem;
+} 

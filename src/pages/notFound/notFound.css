@@ -1,0 +1,35 @@
+.notFound {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+}
+
+.notFound > h1 {
+  font-size: 4rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.notFound > a {
+  text-decoration: none;
+  color: white;
+  width: 25rem;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: #8d9cf4;
+  transition: all 0.2s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+.notFound > a:hover {
+  border: 0.2rem solid #8d9cf4;
+  background-color: white;
+  color: #8d9cf4;
+}

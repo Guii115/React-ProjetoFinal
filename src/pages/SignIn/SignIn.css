@@ -1,0 +1,137 @@
+.signInAndSignUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+}
+
+.titleForm {
+  font-size: 3rem;
+  color: #0d1d31;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.titleForm > img {
+  width: 4rem;
+}
+
+.line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #7bcdd1;
+  color: #7bcdd1;
+  border: none;
+  opacity: 1;
+  margin: 0;
+}
+
+.formStyles {
+  width: 50rem;
+  padding: 1.5rem 3rem;
+  border: 0.2rem solid #bec6f4;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  align-items: center;
+  color: black;
+}
+
+.formStyles > fieldset {
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.formStyles > fieldset:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.formStyles > fieldset:nth-child(2) section {
+  width: 100%;
+}
+
+.formStyles > fieldset:nth-child(2) > section > label {
+  font-size: 1.6rem;
+}
+
+.formStyles > fieldset:nth-child(2) > section > select {
+  font-size: 1.4rem;
+}
+
+.formStyles > fieldset > label {
+  font-size: 1.6rem;
+}
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.formStyles > fieldset > .inputContainer > input {
+  height: 4rem;
+  font-size: 1.5rem;
+  padding: 0 4rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #c1f7fd;
+  width: 100%;
+}
+
+input[type="date"] {
+  height: 4rem;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #c1f7fd;
+  width: 100%;
+}
+
+.formStyles > fieldset > .inputContainer > input:focus, input[type="date"]:focus {
+  outline: 0.2rem solid rgb(22, 54, 136);
+}
+
+.formStyles > button {
+  height: 4rem;
+  width: 15rem;
+  border: none;
+  background-color: #8d9cf4;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.7rem;
+  transition: all 0.2s ease-in-out;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.formStyles > button:hover {
+  background-color: #ffffff;
+  border: 0.1rem solid #8d9cf4;
+  color: #8d9cf4;
+}
+
+.iconInputs {
+  width: 2.5rem;
+  position: absolute;
+  left: 1rem;
+}
+
+@media (max-width: 600px) {
+  .signInAndSignUp {
+    padding: 4rem;
+  }
+}

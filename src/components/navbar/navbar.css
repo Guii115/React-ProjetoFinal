@@ -1,0 +1,219 @@
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  min-height: 6rem;
+  background-color: white;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.Logo > img {
+  width: 5rem;
+}
+
+.Logo > h1 {
+  font-size: 3rem;
+  color: #ee2011;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0;
+  text-shadow: 0.25rem 0.25rem black;
+}
+
+.completeNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 63%;
+}
+
+
+
+
+.linksNav {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0;
+}
+
+.linksNav > li {
+  display: flex;
+  align-items: center;
+}
+
+.linksNav > li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  transition: all .2s ease-in-out;
+  position: relative;
+ }
+
+ .linksNav > li > a:hover {
+  color: #d17b7b;
+}
+
+.linksNav > li > a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.5rem;
+  background-color: #d17b7b;
+  left: 0;
+  bottom: -2.6rem;
+  transition: all.2s ease-in-out;
+}
+
+.linksNav > li > a:hover::after {
+  bottom: -1.7rem;
+}
+
+.formSearch {
+  display: flex;
+  align-items: center;
+}
+
+.inputSeach {
+  width: 25rem;
+  height: 3.8rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border: 0.1rem solid #ee2011;
+  padding: 0 1rem;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+}
+
+.inputSeach:focus {
+  outline: none;
+  border: 0.1rem solid black;
+}
+
+.buttonSearch {
+  height: 3.8rem;
+  border: 0.1rem solid #ee2011;
+  background-color: #ee2011;
+  color: black;
+  padding: 0 3rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+}
+
+.activeNavbarMobile {
+  display: none;
+}
+
+
+/* Adicione estas regras CSS no seu arquivo navbar.css */
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 6rem; /* ou ajuste conforme necessário */
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.active {
+  display: flex;
+}
+
+.burgerLines.active {
+  background-color: rgb(151, 206, 209); /* ou a cor desejada para indicar ativo */
+}
+
+.activeNavbarMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 3.7rem;
+  height: 100%;
+  border: none;
+  background: none;
+  cursor: pointer; /* Adicione isso para indicar que é clicável */
+}
+
+
+@media (max-width: 1200px) {
+  .Logo > h1 {
+  font-size: 2.3rem;
+}
+
+.linksNav > li > a {
+  font-size: 1.7rem;
+ }
+
+ .buttonSearch {
+  padding: 0 1.8rem;
+  font-size: 1.8rem;
+}
+
+.inputSeach {
+  width: 20rem;
+}
+}
+
+@media (max-width: 1000px) {
+  .Logo > h1 {
+  font-size: 2rem;
+}
+
+.linksNav > li > a {
+  font-size: 1.4rem;
+  
+ }
+
+ .buttonSearch {
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+}
+
+.inputSeach {
+  width: 17rem;
+}
+}
+
+ @media (max-width: 900px) {
+  .completeNavbar {
+    display: none;
+  }
+
+  .activeNavbarMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 3.7rem;
+    height: 100%;
+    border: none;
+    background: none;
+  }
+
+  .burgerLines {
+    width: 100%;
+    border-radius: 1rem;
+    background-color: black;
+    height: 0.6rem;
+  }
+ } 
+
+
+
